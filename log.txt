@@ -1,0 +1,1316 @@
+2024-11-09 20:21:50 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 20:21:50 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 20:21:50 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 20:21:50 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 20:21:50 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 20:21:50 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 20:21:50 [scrapy.extensions.telnet] INFO: Telnet Password: 597e8b156f84fb3b
+2024-11-09 20:21:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 20:21:50 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 20:21:50 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 20:21:50 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 20:21:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 20:21:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 20:21:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 20:21:51 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 20:21:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 20:21:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 20:21:51 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 20:21:51 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 20:21:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-09 20:21:56 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-09 20:21:56 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-09 20:21:56 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-09 20:21:56 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-09 20:21:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-09 20:21:59 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 20:22:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-09 20:22:06 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:22:06 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 20:22:16 [job_positions] DEBUG: Navigating to the next page...
+2024-11-09 20:22:21 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-11-09 20:22:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-09 20:22:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 8970,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 30.013866,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 19, 22, 21, 136171, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 88,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 19, 21, 51, 122305, tzinfo=datetime.timezone.utc)}
+2024-11-09 20:22:21 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-09 20:22:21 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 20:22:22 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 20:22:22 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-09 20:22:22 [scrapy-playwright] INFO: Closing browser
+2024-11-09 20:22:22 [scrapy-playwright] DEBUG: Browser disconnected
+2024-11-09 20:24:32 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 20:24:33 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 20:24:33 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 20:24:33 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 20:24:33 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 20:24:33 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 20:24:33 [scrapy.extensions.telnet] INFO: Telnet Password: b63537b59d32e6ae
+2024-11-09 20:24:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 20:24:33 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 20:24:33 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 20:24:33 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 20:24:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 20:24:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 20:24:33 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 20:24:33 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 20:24:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 20:24:33 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 20:24:33 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 20:24:33 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 20:24:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-09 20:24:39 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-09 20:24:39 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-09 20:24:39 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-09 20:24:39 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-09 20:24:39 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-09 20:24:40 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-09 20:24:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:40 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:40 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-09 20:24:40 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:43 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-09 20:24:44 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-09 20:24:45 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 20:24:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-09 20:24:53 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 20:24:54 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 20:25:03 [job_positions] DEBUG: Navigating to the next page...
+2024-11-09 20:25:08 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-11-09 20:25:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-09 20:25:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 9011,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'dupefilter/filtered': 1,
+ 'elapsed_time_seconds': 35.017684,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 19, 25, 8, 748917, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 88,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'request_depth_max': 1,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 19, 24, 33, 731233, tzinfo=datetime.timezone.utc)}
+2024-11-09 20:25:08 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-09 20:25:08 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 20:25:09 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 20:25:09 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-09 20:25:09 [scrapy-playwright] INFO: Closing browser
+2024-11-09 20:25:09 [scrapy-playwright] DEBUG: Browser disconnected
+2024-11-09 21:41:02 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 21:41:02 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 21:41:02 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 21:41:02 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 21:41:02 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 21:41:02 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 21:41:02 [scrapy.extensions.telnet] INFO: Telnet Password: c0986ea03f2d97ae
+2024-11-09 21:41:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 21:41:02 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 21:41:02 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 21:41:02 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 21:41:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 21:41:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 21:41:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 21:41:02 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 21:41:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 21:41:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 21:41:02 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 21:41:02 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 21:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-09 21:41:08 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-09 21:41:08 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-09 21:41:08 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-09 21:41:08 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-09 21:41:08 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:09 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:10 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-09 21:41:11 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 21:41:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-09 21:41:17 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 21:41:18 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 21:41:27 [job_positions] DEBUG: The url is: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs
+2024-11-09 21:41:27 [scrapy.core.scraper] ERROR: Spider error processing <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None)
+Traceback (most recent call last):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\defer.py", line 295, in aiter_errback
+    yield await it.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 355, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 30, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 35, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\scrapy\trafigura_jobs\trafigura_jobs\spiders\job_positions.py", line 36, in parse
+    self.log("The url is: " + response.css("p[data-automation-id='jobOutOfText']"))
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "SelectorList") to str
+2024-11-09 21:41:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-09 21:41:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 9010,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 25.017329,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 20, 41, 27, 860793, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 87,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 20, 41, 2, 843464, tzinfo=datetime.timezone.utc)}
+2024-11-09 21:41:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-09 21:41:27 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 21:41:28 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 21:41:28 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-09 21:41:28 [scrapy-playwright] INFO: Closing browser
+2024-11-09 21:41:28 [scrapy-playwright] DEBUG: Browser disconnected
+2024-11-09 22:14:12 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 22:14:13 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 22:14:13 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 22:14:13 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 22:14:13 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 22:14:13 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 22:14:13 [scrapy.extensions.telnet] INFO: Telnet Password: c53de9f4bc75591d
+2024-11-09 22:14:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 22:14:13 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 22:14:13 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 22:14:13 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 22:14:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 22:14:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 22:14:13 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 22:14:13 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 22:14:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 22:14:13 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 22:14:13 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 22:14:13 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 22:14:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-09 22:14:19 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-09 22:14:19 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-09 22:14:19 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-09 22:14:20 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-09 22:14:20 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:23 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 22:14:25 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-09 22:14:26 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:14:26 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-09 22:14:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-09 22:14:34 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:14:34 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 22:14:43 [job_positions] DEBUG: The url is: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs
+2024-11-09 22:14:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None)
+Traceback (most recent call last):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\defer.py", line 295, in aiter_errback
+    yield await it.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 355, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 30, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 35, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\scrapy\trafigura_jobs\trafigura_jobs\spiders\job_positions.py", line 36, in parse
+    self.log("The url is: " + response.css("p[data-automation-id='jobOutOfText']::text").get())
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2024-11-09 22:14:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-09 22:14:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 8980,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 30.017614,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 21, 14, 43, 925468, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 87,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 21, 14, 13, 907854, tzinfo=datetime.timezone.utc)}
+2024-11-09 22:14:43 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-09 22:14:43 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 22:14:44 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 22:14:44 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-09 22:14:44 [scrapy-playwright] INFO: Closing browser
+2024-11-09 22:14:45 [scrapy-playwright] DEBUG: Browser disconnected
+2024-11-09 22:17:49 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 22:17:49 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 22:17:49 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 22:17:49 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 22:17:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 22:17:49 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 22:17:49 [scrapy.extensions.telnet] INFO: Telnet Password: 70f8e62f368e1917
+2024-11-09 22:17:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 22:17:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 22:17:49 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 22:17:49 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 22:17:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 22:17:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 22:17:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 22:17:49 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 22:17:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 22:17:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 22:17:49 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 22:17:49 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 22:17:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-09 22:17:55 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-09 22:17:55 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-09 22:17:55 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-09 22:17:55 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-09 22:17:55 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-09 22:17:56 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-09 22:17:57 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-09 22:17:58 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 22:17:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-09 22:18:05 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-09 22:18:05 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-09 22:18:14 [job_positions] DEBUG: The url is: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs
+2024-11-09 22:18:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None)
+Traceback (most recent call last):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\defer.py", line 295, in aiter_errback
+    yield await it.__anext__()
+          ^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 374, in __anext__
+    return await self.data.__anext__()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\python.py", line 355, in _async_chain
+    async for o in as_async_generator(it):
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\utils\asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\referer.py", line 355, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 30, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\spidermiddlewares\depth.py", line 35, in process_spider_output_async
+    async for r in result or ():
+  File "H:\programming\Scraping Projects\Scrapy\env\Lib\site-packages\scrapy\core\spidermw.py", line 118, in process_async
+    async for r in iterable:
+  File "H:\programming\Scraping Projects\scrapy\trafigura_jobs\trafigura_jobs\spiders\job_positions.py", line 36, in parse
+    self.log("The url is: " + response.css("#mainContent > div > div.css-uvpbop > section > div.css-3z7fsk > p::text").get())
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: can only concatenate str (not "NoneType") to str
+2024-11-09 22:18:14 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-09 22:18:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 9022,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 25.017712,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 21, 18, 14, 934683, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 87,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 21, 17, 49, 916971, tzinfo=datetime.timezone.utc)}
+2024-11-09 22:18:14 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-09 22:18:14 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 22:18:15 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 22:18:15 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-09 22:18:15 [scrapy-playwright] INFO: Closing browser
+2024-11-09 22:18:16 [scrapy-playwright] DEBUG: Browser disconnected
+2024-11-09 23:57:28 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-09 23:57:28 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-09 23:57:28 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-09 23:57:28 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-09 23:57:28 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-09 23:57:28 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-09 23:57:28 [scrapy.extensions.telnet] INFO: Telnet Password: a4acc8c10294870c
+2024-11-09 23:57:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-09 23:57:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-09 23:57:29 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-09 23:57:29 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-09 23:57:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-09 23:57:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-09 23:57:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-09 23:57:29 [scrapy.core.engine] INFO: Spider opened
+2024-11-09 23:57:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-09 23:57:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-09 23:57:29 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 23:57:29 [scrapy-playwright] INFO: Starting download handler
+2024-11-09 23:57:34 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2024-11-09 23:57:34 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2024-11-09 23:57:34 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'elapsed_time_seconds': 5.006591,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2024, 11, 9, 22, 57, 34, 646660, tzinfo=datetime.timezone.utc),
+ 'log_count/DEBUG': 4,
+ 'log_count/INFO': 14,
+ 'start_time': datetime.datetime(2024, 11, 9, 22, 57, 29, 640069, tzinfo=datetime.timezone.utc)}
+2024-11-09 23:57:34 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2024-11-09 23:57:34 [scrapy-playwright] INFO: Closing download handler
+2024-11-09 23:57:35 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2024-11-09 23:57:35 [scrapy-playwright] INFO: Closing download handler
+2024-11-10 00:13:07 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: trafigura_jobs)
+2024-11-10 00:13:08 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.2.1, Twisted 24.10.0, Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.3, Platform Windows-11-10.0.22631-SP0
+2024-11-10 00:13:08 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-11-10 00:13:08 [asyncio] DEBUG: Using selector: SelectSelector
+2024-11-10 00:13:08 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-11-10 00:13:08 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-11-10 00:13:08 [scrapy.extensions.telnet] INFO: Telnet Password: 1cc1b90bc02a6005
+2024-11-10 00:13:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-11-10 00:13:08 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'trafigura_jobs',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'log.txt',
+ 'NEWSPIDER_MODULE': 'trafigura_jobs.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['trafigura_jobs.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-11-10 00:13:08 [asyncio] DEBUG: Using proactor: IocpProactor
+2024-11-10 00:13:08 [scrapy-playwright] INFO: Started loop on separate thread: <ProactorEventLoop running=True closed=False debug=False>
+2024-11-10 00:13:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-11-10 00:13:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-11-10 00:13:08 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-11-10 00:13:08 [scrapy.core.engine] INFO: Spider opened
+2024-11-10 00:13:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-11-10 00:13:08 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-11-10 00:13:08 [scrapy-playwright] INFO: Starting download handler
+2024-11-10 00:13:08 [scrapy-playwright] INFO: Starting download handler
+2024-11-10 00:13:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/robots.txt> (referer: None)
+2024-11-10 00:13:14 [scrapy-playwright] INFO: Launching browser chromium
+2024-11-10 00:13:14 [scrapy-playwright] INFO: Browser chromium launched
+2024-11-10 00:13:14 [scrapy-playwright] DEBUG: Browser context started: 'default' (persistent=False, remote=False)
+2024-11-10 00:13:14 [scrapy-playwright] DEBUG: [Context=default] New page created, page count is 1 (1 for all contexts)
+2024-11-10 00:13:14 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (resource type: document)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/client-analytics/uxInsights.min.js?plate=BMT216A> (location: /wday/asset/client-analytics/0.163.1/uxInsights.min.js)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/shared-vendors.min.js> (location: /wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/client-analytics/0.163.1/uxInsights.min.js>
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkday.com/wday/asset/uic-shared-vendors/1.35.0/shared-vendors.min.js>
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:15 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/cx-jobs.min.js> (location: /wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js> (resource type: script, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/cx-jobs.min.js>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_account_creation/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/account_settings/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_search_labels/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/generic/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/sms_for_recruiting/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/cxs_job_posting_details/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/compiled-lang/external_references/en-US.json> (location: /wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/account_settings/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_account_creation/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_search_labels/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/sms_for_recruiting/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/generic/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/cxs_job_posting_details/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/compiled-lang/external_references/en-US.json>
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:16 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/approot>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/paradox.html> (location: /wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto400.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto700.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <307 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/fonts/Roboto500.woff2> (location: /wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/userprofile>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/logo>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/TrafiguraCareerSite/assets/banner>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000> (resource type: image, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebar>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/videoLabels>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://paradox-tp.myworkdaycdn.com/wday/asset/candidate-experience-paradox-ai/2024.41.22/paradox.html>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto700.woff2>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto400.woff2>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Request: <GET https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2> (resource type: font, referrer: https://trafigura.wd3.myworkdayjobs.com/)
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://wd3.myworkdaycdn.com/wday/asset/candidate-experience-jobs/2024.41.22/fonts/Roboto500.woff2>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/sidebarimage/72a2a90a4a771001f11cd429576f0000>
+2024-11-10 00:13:17 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-10 00:13:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs> (referer: None) ['playwright']
+2024-11-10 00:13:23 [job_positions] DEBUG: Next button found, clicking...
+2024-11-10 00:13:24 [scrapy-playwright] DEBUG: [Context=default] Request: <POST https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs> (resource type: fetch, referrer: https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs)
+2024-11-10 00:13:24 [scrapy-playwright] DEBUG: [Context=default] Response: <200 https://trafigura.wd3.myworkdayjobs.com/wday/cxs/trafigura/TrafiguraCareerSite/jobs>
+2024-11-10 00:13:38 [job_positions] DEBUG: Page content updated. Proceeding to next page...
+2024-11-10 00:13:38 [scrapy.core.scraper] ERROR: Spider must return request, item, or None, got 'HtmlResponse' in <GET https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs>
+2024-11-10 00:13:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-11-10 00:13:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 810,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 9005,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 30.01316,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 11, 9, 23, 13, 38, 885413, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 597,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 88,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 15,
+ 'playwright/browser_count': 1,
+ 'playwright/context_count': 1,
+ 'playwright/context_count/max_concurrent': 1,
+ 'playwright/context_count/persistent/False': 1,
+ 'playwright/context_count/remote/False': 1,
+ 'playwright/page_count': 1,
+ 'playwright/page_count/max_concurrent': 1,
+ 'playwright/request_count': 39,
+ 'playwright/request_count/method/GET': 37,
+ 'playwright/request_count/method/POST': 2,
+ 'playwright/request_count/navigation': 1,
+ 'playwright/request_count/resource_type/document': 1,
+ 'playwright/request_count/resource_type/fetch': 23,
+ 'playwright/request_count/resource_type/font': 6,
+ 'playwright/request_count/resource_type/image': 3,
+ 'playwright/request_count/resource_type/script': 6,
+ 'playwright/response_count': 39,
+ 'playwright/response_count/method/GET': 37,
+ 'playwright/response_count/method/POST': 2,
+ 'playwright/response_count/resource_type/document': 1,
+ 'playwright/response_count/resource_type/fetch': 23,
+ 'playwright/response_count/resource_type/font': 6,
+ 'playwright/response_count/resource_type/image': 3,
+ 'playwright/response_count/resource_type/script': 6,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2024, 11, 9, 23, 13, 8, 872253, tzinfo=datetime.timezone.utc)}
+2024-11-10 00:13:38 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-11-10 00:13:38 [scrapy-playwright] INFO: Closing download handler
+2024-11-10 00:13:39 [scrapy-playwright] INFO: Closing download handler
+2024-11-10 00:13:39 [scrapy-playwright] DEBUG: Browser context closed: 'default' (persistent=False, remote=False)
+2024-11-10 00:13:39 [scrapy-playwright] INFO: Closing browser
+2024-11-10 00:13:39 [scrapy-playwright] DEBUG: Browser disconnected
