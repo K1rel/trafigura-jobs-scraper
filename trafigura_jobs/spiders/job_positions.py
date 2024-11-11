@@ -4,12 +4,6 @@ import scrapy
 from scrapy_playwright.page import PageMethod
 
 
-async def scroll_page(page) -> str:
-    await page.wait_for_selector(selector="section[data-automation-id='jobResults'] ul[role='list'] > li:first-child")
-    await page.evaluate("window.scrollBy(0, document.body.scrollHeight)")
-    await page.wait_for_selector(selector="section[data-automation-id='jobResults'] ul[role='list'] > li:last-child")
-    return page.url
-
 class JobPositionsSpider(scrapy.Spider):
     name = 'job_positions'
     start_urls = ['https://trafigura.wd3.myworkdayjobs.com/en-US/TrafiguraCareerSite/jobs']
@@ -18,7 +12,10 @@ class JobPositionsSpider(scrapy.Spider):
         yield scrapy.Request(self.start_urls[0], meta=dict(
             playwright=True,
             playwright_include_page=True,  
-            playwright_page_methods= [PageMethod(scroll_page)]
+            playwright_page_methods= [PageMethod("wait_for_selector","section[data-automation-id='jobResults'] ul[role='list'] > li:first-child"),
+                                      PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
+                                      PageMethod("wait_for_selector", "section[data-automation-id='jobResults'] ul[role='list'] > li:last-child")
+                                      ]
          
             )
         )
