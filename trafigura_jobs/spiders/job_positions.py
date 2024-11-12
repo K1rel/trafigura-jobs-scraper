@@ -1,8 +1,26 @@
-import random
-from typing import Iterable
+from datetime import datetime, timedelta
+import re
 import scrapy
 from scrapy_playwright.page import PageMethod
 
+def parse_posted_date(text):
+    final = ""
+    if "30+ Days Ago" in text:
+        
+        posted_date = datetime.now() - timedelta(days=30)
+        final = f"Before {posted_date}"
+    if "Today" in text:
+        posted_date = datetime.now() 
+    else:
+        
+        match = re.search(r"(\d+)\s+Days? Ago", text, re.IGNORECASE)
+        if not match:
+            return None  
+
+        days_ago = int(match.group(1))
+        posted_date = datetime.now() - timedelta(days=days_ago)
+
+    return final if final else  posted_date.strftime("%Y-%m-%d") 
 
 class JobPositionsSpider(scrapy.Spider):
     name = 'job_positions'
@@ -26,7 +44,9 @@ class JobPositionsSpider(scrapy.Spider):
 
             for job in response.css("section[data-automation-id='jobResults'] ul[role='list'] > li"):
                 yield {
-                    'title': job.css("a[data-automation-id='jobTitle']::text").get()
+                    'title': job.css("a[data-automation-id='jobTitle']::text").get(),
+                    'location': job.css("div[data-automation-id='locations'] dd::text").get(),
+                    'posted_date': parse_posted_date(job.css("div[data-automation-id='postedOn'] dd::text").get())
                 }
 
             next_button_selector = "button[data-uxi-element-id='next']"
